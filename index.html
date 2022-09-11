@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de bases | Emíllie Nicole</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="background">
+        <div class="backgroundCard bgDarkGlass">
+            <div class="headerCard">
+                <span class="mainTitleCard">
+                    Conversor de bases
+                </span>
+                <div class="subtitleCard">
+                    <span>Decimal</span>
+                    <span>Binário</span>
+                    <span>Octal</span>
+                    <span>Hexadecimal</span>
+                </div>
+            </div>
+        </div>
+        <div class="backgroundCard bgClearGlass mt10">
+            Boas vindas ao conversor de bases personalizado! Aqui você pode converter qualquer valor para <span
+                class="bold">decimal, binário, octal ou hexadecimal!</span>
+        </div>
+        <div class="backgroundCard bgDarkGlass mt10">
+            <div>
+                <div>
+                    <div class="bold whiteText bigTinyText">Selecione a base que será convertida</div>
+                    <div class="mt20 radioGroupContainer bold">
+                        <input type="radio" name="group" id="iptDecimal"><label for="iptDecimal">Decimal</label>
+                        <input type="radio" name="group" id="iptBinario"><label for="iptBinario">Binário</label>
+                        <input type="radio" name="group" id="iptOctal"><label for="iptOctal">Octal</label>
+                        <input type="radio" name="group" id="iptHexadecimal"><label for="iptHexadecimal">Hexadecimal</label>
+                    </div>
+                </div>
+                <div class="mt10">
+                    <span>Digite um valor</span><br>
+                    <input type="text" id="iptValor">
+                </div>
+                <div>
+                    <button id="btn" onclick="verificarRadio()">Converter</button>
+                </div>
+                <div id="output"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

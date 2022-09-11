@@ -12,45 +12,49 @@
 
 <body>
     <div id="background">
-        <div class="backgroundCard bgDarkGlass">
-            <div class="headerCard">
-                <span class="mainTitleCard">
-                    Conversor de bases
-                </span>
-                <div class="subtitleCard">
-                    <span>Decimal</span>
-                    <span>Binário</span>
-                    <span>Octal</span>
-                    <span>Hexadecimal</span>
-                </div>
-            </div>
-        </div>
-        <div class="backgroundCard bgClearGlass mt10">
-            Boas vindas ao conversor de bases personalizado! Aqui você pode converter qualquer valor para <span
-                class="bold">decimal, binário, octal ou hexadecimal!</span>
-        </div>
-        <div class="backgroundCard bgDarkGlass mt10">
-            <div>
-                <div>
-                    <div class="bold whiteText bigTinyText">Selecione a base que será convertida</div>
-                    <div class="mt20 radioGroupContainer bold">
-                        <input type="radio" name="group" id="iptDecimal"><label for="iptDecimal">Decimal</label>
-                        <input type="radio" name="group" id="iptBinario"><label for="iptBinario">Binário</label>
-                        <input type="radio" name="group" id="iptOctal"><label for="iptOctal">Octal</label>
-                        <input type="radio" name="group" id="iptHexadecimal"><label for="iptHexadecimal">Hexadecimal</label>
+        <div class="contain">
+            <div class="backgroundCard bgDarkGlass">
+                <div class="headerCard">
+                    <span class="mainTitleCard">
+                        Conversor de bases
+                    </span>
+                    <div class="subtitleCard">
+                        <span>Binário</span>
+                        <span>Octal</span>
+                        <span>Hexadecimal</span>
                     </div>
                 </div>
-                <div class="mt10">
-                    <span>Digite um valor</span><br>
-                    <input type="text" id="iptValor">
-                </div>
+            </div>
+            <div class="backgroundCard bgClearGlass mt10">
+                Boas vindas ao conversor de bases personalizado! Aqui você pode converter um valor decimal para <span
+                    class="bold"> binário, octal ou hexadecimal!</span>
+            </div>
+            <div class="backgroundCard bgDarkGlass mt10">
                 <div>
-                    <button id="btn" onclick="verificarRadio()">Converter</button>
+                    <div class="bold whiteText bigTinyText">Digite o valor em decimal</div>
+                    <div class="mt10">
+                        <input type="number" id="iptValor" class="input bgClearGlass">
+                    </div>
+                    <div class="mt10">
+                        <button id="btn" class="button"  onclick="verificarRadio()">Converter</button>
+                    </div>
                 </div>
-                <div id="output"></div>
+
+            </div>
+            <div class="resultsContainer">
+                <div class="backgroundCard1 bgClearGlass mt10 resultCard">
+                    <div id="output1"></div>
+                </div>
+                <div class="backgroundCard1 bgClearGlass mt10 resultCard">
+                    <div id="output2"></div>
+                </div>
+                <div class="backgroundCard1 bgClearGlass mt10 resultCard">
+                    <div id="output3"></div>
+                </div>
             </div>
         </div>
     </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>

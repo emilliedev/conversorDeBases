@@ -4,17 +4,17 @@
 
 /* GRADIENT BACKGROUND */
 
-#background {
-    /* background: rgb(255,145,197);
-    background: linear-gradient(0deg, rgba(255,145,197,1) 0%, rgba(181,45,253,1) 100%); */
+html {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 13s ease infinite;
+}
+
+#background {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    height: 100vh;
     flex-direction: column;
 }
 
@@ -35,7 +35,14 @@
 /* BACKGROUND DO CARD */
 
 .backgroundCard{
-    width: 90%;
+    height: fit-content;
+    padding: 30px;
+    border-radius: 1rem;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
+.backgroundCard1{
     height: fit-content;
     padding: 30px;
     border-radius: 1rem;
@@ -104,6 +111,10 @@
     color: #FFFF;
 }
 
+.blackText {
+    color: #000;
+}
+
 .bigTinyText {
     font-size: larger;
 }
@@ -112,4 +123,67 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
+}
+
+.input {
+    padding: 10px;
+    transition: 0.5s;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.input:focus {
+    border: 1px solid white;
+    outline: none;
+    border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.resultsContainer {
+    height: fit-content;
+    border-radius: 1rem;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resultCard {
+    width: 27%;
+    word-break: break-all;
+}
+
+@media (max-width: 1122px) {
+    .resultsContainer {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .resultCard {
+        width: auto;
+    }
+}
+
+.contain {
+    width: 90%;
+}
+
+.button {
+    padding: 10px 100px 10px 100px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 900;
+    color: #e73c7e;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button:hover {
+    transform: scale(1.1);
 }
